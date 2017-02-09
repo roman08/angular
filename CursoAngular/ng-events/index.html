@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<title></title>
+	<link rel="stylesheet" href="">
+	<style>
+		.hover{
+			background-color: rgb(200,50,50);
+		}
+		.no-hover{
+			background-color: rgb(50,50,200);
+		}
+	</style>
+</head>
+<body>
+	<button ng-click="bandera = !bandera"  ng-class="{'hover': bandera, 'no-hover': !bandera}">
+		Hover mw
+	</button>
+	<p>valor de la bandera <strong>{{ bandera | json}}</strong></p>
+	<span ng-show="bandera"><-click me</span>
+</body>
+</html>

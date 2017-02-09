@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html ng-app="MyApp">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+	<title>ngular - src</title>
+	<script  src="app.js"></script>
+</head>
+<body ng-controller="AppCtrl">
+	<ul class="no-list">
+		<li ng-repeat = "repo in repos">
+			<img ng-src="{{repo.owner.avatar_url}}">
+			<h1>{{repo.name}}</h1>
+			
+		</li>
+		
+	</ul>
+	
+</body>
+</html>
